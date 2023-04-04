@@ -1,0 +1,16 @@
+---
+layout: base.njk
+permalink: /posts/
+eleventyNavigation:
+  key: Archive
+  order: 3
+---
+
+<h1>Archive</h1>
+<ul>
+{%- for posts in collections.posts -%}
+  <li{% if page.url == posts.url %} aria-current="page"{% endif %}>
+    <a href="{{ posts.url }}">{{ posts.data.title }}</a>
+  </li>
+{%- endfor -%}
+</ul>

@@ -8,7 +8,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Kariyma Murphy</title>
+        <title>My story</title>
         <meta name="description" content="A writing blog">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Eleventy v2.0.1">
@@ -23,10 +23,10 @@
             <nav>
                 
                     <ol>
-                        <li class="my-active-class">
+                        <li>
                             <a href="/">Home</a>
                         </li>
-                        <li>
+                        <li class="my-active-class">
                             <a href="/my-story">About</a>
                         </li>
                         <li>
@@ -36,12 +36,19 @@
             </nav>
         </header>
         <main>
-            <h1></h1>
+            <h1>My story</h1>
             
-
-This is my writing blog
-
-<p>More posts can be found in <a href="/posts/">the archive</a>.</p>
+<section>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet risus feugiat in ante metus dictum.</p>
+ 
+  <p>Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Turpis egestas integer eget aliquet. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Ut lectus arcu bibendum at. Integer enim neque volutpat ac tincidunt.</p>
+ 
+  <p>Commodo ullamcorper a lacus vestibulum sed arcu. Et tortor consequat id porta nibh venenatis cras sed. Nulla pharetra diam sit amet nisl. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Nec sagittis aliquam malesuada bibendum.</p>
+ 
+  <p>Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Turpis egestas integer eget aliquet. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Ut lectus arcu bibendum at. Integer enim neque volutpat ac tincidunt.</p>
+ 
+  <p>Commodo ullamcorper a lacus vestibulum sed arcu. Et tortor consequat id porta nibh venenatis cras sed. Nulla pharetra diam sit amet nisl. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Nec sagittis aliquam malesuada bibendum.</p>
+</section>
         </main>
         <footer></footer>
         <script src="" async defer></script>

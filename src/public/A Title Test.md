@@ -1,19 +1,13 @@
-<%* 
-	let title = tp.file.title
-	if (title.startsWith("Untitled")) {
-		title = await tp.system.prompt("Please enter a title");
-	}
-	tR += "---" 
-%>
-title: <%* tR += title %>
-permalink: "/public/{{ title | slugify }}"
+---
+title: A Title Test
 description: # add a description.
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: 2023-04-03
 tags: 
+  - posts
   - journal
 layout: post.njk
 ---
-<% 	await tp.file.move("/private/" + title) %>
+
 
 ### Heading 3. Lipsum ipsum dolor sit amet, consectetur adipiscing elit. Vivamus felis ipsum, condimentum a tristique eu, molestie id quam. Suspendisse posuere egestas eleifend. Donec bibendum luctus nulla at bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus.  
   
@@ -22,3 +16,5 @@ layout: post.njk
 Phasellus elementum varius felis in vehicula. In semper arcu eu egestas finibus. Nullam porttitor ligula at blandit interdum. Phasellus ac laoreet odio, vel pharetra mi. Nulla eleifend porttitor commodo. Aliquam ornare tincidunt nisl. Phasellus quis ligula eget lectus ultrices egestas. Cras tempus eros quis ornare semper. Phasellus sed tempor nunc. Donec sed nisl orci. Sed finibus quam ut pharetra euismod. Etiam id nibh enim.  
   
 Etiam sit amet arcu et dui ultrices tincidunt. Integer nec sodales leo. Pellentesque ultrices lacinia sagittis. Proin sit amet arcu nec nisl blandit posuere. Suspendisse in orci viverra, finibus elit sit amet, egestas nulla. Curabitur eu vulputate ante. Pellentesque fermentum, lacus vitae tristique aliquam, libero quam consectetur lorem, sed ultrices purus lorem nec tellus. Nunc commodo sed tortor sed vulputate. Suspendisse semper, tellus ultrices congue dictum, turpis lacus fringilla ligula, quis euismod nibh purus ac erat. Quisque malesuada velit elit, ut tristique metus tincidunt vitae. Sed sit amet felis eu erat blandit pulvinar. Nam dignissim ipsum luctus interdum pharetra. Suspendisse quis odio enim. Ut vitae finibus leo.
+
+![a gradient image](/img/undertone01-4.jpg)

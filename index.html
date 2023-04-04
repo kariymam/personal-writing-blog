@@ -1,8 +1,0 @@
----
-layout: base.njk
-templateClass: tmpl-post
----
-
-{% for posts in collections.post%}
-<h2><a href="{{ posts.url }}"> {{ posts.data.title }}</a></h2>
-{% endfor %}

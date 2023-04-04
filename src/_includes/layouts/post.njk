@@ -1,8 +1,7 @@
 ---
 layout: base.njk
+permalink: "posts/{{ title | slugify }}"
 templateClass: tmpl-post
 ---
-
-<h1>{{ title }}</h1>
 
 {{ content | safe }}

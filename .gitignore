@@ -13,8 +13,7 @@ node_modules/
 
 #Obsidian
 *.obsidian
-./private
-./obsidian-templates
+_private/
 
 #VS Code
 .DS_Store

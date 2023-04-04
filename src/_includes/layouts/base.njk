@@ -4,14 +4,14 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<htm lang="en">
+<htm lang="{{ metadata.language }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Kariyma Murphy</title>
-        <meta name="description" content="A writing blog">
+        <title>{{ title or metadata.title }}</title>
+        <meta name="description" content="{{ description or metadata.description }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Eleventy v2.0.1">
+        <meta name="generator" content="{{ eleventy.generator }}">
         <link rel="stylesheet" href="">
     </head>
     <body>
@@ -19,29 +19,21 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header>
-            <a href="/">Kariyma Murphy</a>
+            <a href="{{ '/' | url }}">{{ metadata.title }}</a>
             <nav>
-                
+                {% set navPages = collections.all | eleventyNavigation %}
                     <ol>
-                        <li class="my-active-class">
-                            <a href="/">Home</a>
+                        {%- for entry in navPages %}
+                        <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+                            <a href="{{ entry.url }}">{{ entry.title }}</a>
                         </li>
-                        <li>
-                            <a href="/my-story">About</a>
-                        </li>
-                        <li>
-                            <a href="/posts/">Archive</a>
-                        </li>
+                        {%- endfor %}
                     </ol>
             </nav>
         </header>
         <main>
-            <h1></h1>
-            
-
-This is my writing blog
-
-<p>More posts can be found in <a href="/posts/">the archive</a>.</p>
+            <h1>{{ title }}</h1>
+            {{ content | safe }}
         </main>
         <footer></footer>
         <script src="" async defer></script>
